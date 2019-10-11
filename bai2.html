@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tăng giá trị đối số lên 1</title>
+</head>
+<body>
+<p>Nhập đối số</p>
+<input type="text" id="inputNumber">
+<input type="button" value="gọi hàm" onclick="augmentNumber()">
+<p id="result"></p>
+<script>
+    function augmentNumber() {
+        let number = parseFloat(document.getElementById("inputNumber").value);
+        number += 1;
+        document.getElementById("result").innerHTML = number;
+    }
+</script>
+</body>
+</html>
